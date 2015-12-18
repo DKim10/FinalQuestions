@@ -28,18 +28,25 @@ public class Rectangle_Test {
 
 	@Test
 	public void Rectangle_Test1() {
-		
+		try
+	      {
 		Rectangle r2 = new Rectangle(-5, -10);
-		assertTrue(r2.ComputeArea() == 50);
-	}
+		//assertTrue(r2.ComputeArea() == 50);
+	} catch (IllegalRectangle e)
+		{
+		e.printStackTrace();}
+		}
 	
 	@Test
 	public void Rectangle_Test2() {
 		
-	
+		try
+		{
 		Rectangle r2 = new Rectangle(-5, -10);
 		assertTrue(r2.ComputeArea() == 50);
-	}
+	} catch(IllegalRectangle e){
+		e.printStackTrace();}
+}
 	
 
 }
